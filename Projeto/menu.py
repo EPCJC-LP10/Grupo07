@@ -14,16 +14,15 @@ def principal():
     return op
 
 
-def alunos():
+def selos():
     print
     print " *** Menu Alunos **** "
     print
-    print "1. Inserir novo aluno"
-    print "2. Listar todos alunos"
-    print "3. Pesquisar aluno"
-    print "4. Alterar dados de um aluno"
-    print "5. Eliminar aluno"
-    print 
+    print '1. inserir novo selo'
+    print '2. Listar todos os selos'
+    print '3. alterar dados de um selo'
+    print '4. eleminar selo'    
+    print
     print "0. Menu Anterior"
 
     op = raw_input("Opção: ")

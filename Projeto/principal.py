@@ -1,21 +1,21 @@
-# -*- coding: utf-8 -*-
+# -*- coding: iso8859-1 -*-
 
 import menu
-import alunos
+import selos
 import util
 
 
 # nome dos ficheiros
-fxAlunos = "fxAlunos.dat"
+fxSelos = "fxSelos.dat"
 
 def ler_ficheiros():
 	# adicionar todos ficheiros a ler
-	alunos.listaAlunos = util.ler_ficheiro(fxAlunos)
+	selos.selo = util.ler_ficheiro(fxSelos)
 
 
 def escrever_ficheiros():
 	# adicionar todos ficheiros a guardar
-	util.escrever_ficheiro(fxAlunos, alunos.listaAlunos)
+	util.escrever_ficheiro(fxSelos, selos.selo)
 
 
 
@@ -28,7 +28,7 @@ while not terminar:
     op = menu.principal()
     
     if op == '1':
-        alunos.gerir()
+        selos.gerir()
     elif op == '2':
         pass    #por fazer
     elif op == '0':
@@ -36,5 +36,3 @@ while not terminar:
 
 
 escrever_ficheiros()
-
-
