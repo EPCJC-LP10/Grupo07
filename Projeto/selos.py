@@ -9,6 +9,14 @@ Created on Fri Mar 21 11:42:06 2014
 import menu
 
 
+from collections import namedtuple
+novo_selo=namedtuple("novo_selo","codigo, serie, ano")
+
+selo=[]
+
+
+
+
 def inserir():
     
     codigo= input ("int. o codigo do selo")
@@ -110,10 +118,3 @@ def gerir():
         elif op == '0':
             terminar = True
 
-
-from collections import namedtuple
-novo_selo=namedtuple("novo_selo","codigo, serie, ano")
-
-selo=[]
-
-gerir()
